@@ -1,0 +1,158 @@
+[
+    {
+        "original": "a",
+        "expected": "a"
+    },
+    {
+        "original": "(\"apple pie\" AND pecan) OR (\"lemon cake\" AND tangerine)",
+        "expected": "(+\"apple pie\" +pecan) (+\"lemon cake\" +tangerine)"
+    },
+    {
+        "original": "*delicious NOT (\"cheeseburger\" OR \"hot dog\")",
+        "expected": "*delicious -(\"cheeseburger\" \"hot dog\")"
+    },
+    {
+        "original": "((\"Star Wars\" OR \"Star Trek\") AND \"Sci-fi\") NOT \"Romance\"",
+        "expected": "(+(\"Star Wars\" \"Star Trek\") +\"Sci-fi\") -\"Romance\""
+    },
+    {
+        "original": "(\"Python\" AND \"programming\") NOT \"Java\"",
+        "expected": "(+\"Python\" +\"programming\") -\"Java\""
+    },
+    {
+        "original": "*bird OR \"eagle\"",
+        "expected": "*bird \"eagle\""
+    },
+    {
+        "original": "\"California\" AND (\"Los Angeles\" OR \"San Francisco\")",
+        "expected": "+\"California\" +(\"Los Angeles\" \"San Francisco\")"
+    },
+    {
+        "original": "(\"Tesla\" OR *musk) NOT \"SpaceX\"",
+        "expected": "(\"Tesla\" *musk) -\"SpaceX\""
+    },
+    {
+        "original": "(\"iPhone\" AND \"Apple\") NOT (\"Android\" OR \"Google\")",
+        "expected": "(+\"iPhone\" +\"Apple\") -(\"Android\" \"Google\")"
+    },
+    {
+        "original": "(\"Elvis Presley\" AND *rock) NOT (\"Pop\" OR \"Disco\")",
+        "expected": "(+\"Elvis Presley\" +*rock) -(\"Pop\" \"Disco\")"
+    },
+    {
+        "original": "(\"Quantum Physics\" AND *Einstein) OR (\"Relativity\" AND *Newton)",
+        "expected": "(+\"Quantum Physics\" +*Einstein) (+\"Relativity\" +*Newton)"
+    },
+    {
+        "original": "(\"New York\" AND *food) NOT \"Pizza\"",
+        "expected": "(+\"New York\" +*food) -\"Pizza\""
+    },
+    {
+        "original": "(\"Game of Thrones\" AND *dragons) OR \"Harry Potter\"",
+        "expected": "(+\"Game of Thrones\" +*dragons) \"Harry Potter\""
+    },
+    {
+        "original": "(\"Math\" OR *calculus) NOT \"Algebra\"",
+        "expected": "(\"Math\" *calculus) -\"Algebra\""
+    },
+    {
+        "original": "(\"NBA\" AND \"Basketball\") NOT \"NFL\"",
+        "expected": "(+\"NBA\" +\"Basketball\") -\"NFL\""
+    },
+    {
+        "original": "(\"COVID-19\" AND *pandemic) NOT \"Vaccine\"",
+        "expected": "(+\"COVID-19\" +*pandemic) -\"Vaccine\""
+    },
+    {
+        "original": "(\"Climate Change\" AND *global) OR \"Warming\"",
+        "expected": "(+\"Climate Change\" +*global) \"Warming\""
+    },
+    {
+        "original": "(\"Olympics\" AND *Tokyo) NOT \"Paris\"",
+        "expected": "(+\"Olympics\" +*Tokyo) -\"Paris\""
+    },
+    {
+        "original": "(\"Mars Rover\" AND *NASA) OR (\"SpaceX\" AND *Elon)",
+        "expected": "(+\"Mars Rover\" +*NASA) (+\"SpaceX\" +*Elon)"
+    },
+    {
+        "original": "(\"FIFA\" AND *soccer) NOT \"Cricket\"",
+        "expected": "(+\"FIFA\" +*soccer) -\"Cricket\""
+    },
+    {
+        "original": "(\"Lord of the Rings\" AND *Tolkien) OR \"Hobbit\"",
+        "expected": "(+\"Lord of the Rings\" +*Tolkien) \"Hobbit\""
+    },
+    {
+        "original": "\"Picasso\" AND *painting NOT (\"Monet\" OR \"Renoir\")",
+        "expected": "+\"Picasso\" +*painting -(\"Monet\" \"Renoir\")"
+    },
+    {
+        "original": "(\"Linux\" AND \"Operating System\") NOT \"Windows\"",
+        "expected": "(+\"Linux\" +\"Operating System\") -\"Windows\""
+    },
+    {
+        "original": "\"Tesla Model 3\" AND *Elon NOT (\"SpaceX\" OR \"Hyperloop\")",
+        "expected": "+\"Tesla Model 3\" +*Elon -(\"SpaceX\" \"Hyperloop\")"
+    },
+    {
+        "original": "\"French Bulldog\" AND *puppy NOT \"Labrador\"",
+        "expected": "+\"French Bulldog\" +*puppy -\"Labrador\""
+    },
+    {
+        "original": "(\"Artificial Intelligence\" OR *machine) AND \"Learning\"",
+        "expected": "+(\"Artificial Intelligence\" *machine) +\"Learning\""
+    },
+    {
+        "original": "(\"Star Wars\" AND *movie) NOT (\"Star Trek\" OR \"Science Fiction\")",
+        "expected": "(+\"Star Wars\" +*movie) -(\"Star Trek\" \"Science Fiction\")"
+    },
+    {
+        "original": "\"Italian Cuisine\" AND *pizza NOT \"Burger\"",
+        "expected": "+\"Italian Cuisine\" +*pizza -\"Burger\""
+    },
+    {
+        "original": "\"Breaking Bad\" AND *Walter NOT (\"Better Call Saul\" OR \"Saul Goodman\")",
+        "expected": "+\"Breaking Bad\" +*Walter -(\"Better Call Saul\" \"Saul Goodman\")"
+    },
+    {
+        "original": "\"Harry Potter\" AND *magic NOT (\"Game of Thrones\" OR \"Dragons\")",
+        "expected": "+\"Harry Potter\" +*magic -(\"Game of Thrones\" \"Dragons\")"
+    },
+    {
+        "original": "\"Deep Learning\" AND *Neural NOT (\"Supervised Learning\" OR \"Regression\")",
+        "expected": "+\"Deep Learning\" +*Neural -(\"Supervised Learning\" \"Regression\")"
+    },
+    {
+        "original": "\"Coca Cola\" AND *drink NOT \"Pepsi\"",
+        "expected": "+\"Coca Cola\" +*drink -\"Pepsi\""
+    },
+    {
+        "original": "\"Mountain Biking\" AND *trail NOT (\"Road Cycling\" OR \"Racing\")",
+        "expected": "+\"Mountain Biking\" +*trail -(\"Road Cycling\" \"Racing\")"
+    },
+    {
+        "original": "\"Lord of the Rings\" AND *Gandalf NOT \"Harry Potter\"",
+        "expected": "+\"Lord of the Rings\" +*Gandalf -\"Harry Potter\""
+    },
+    {
+        "original": "(\"Beyonce\" OR *singer) AND \"Concert\"",
+        "expected": "+(\"Beyonce\" *singer) +\"Concert\""
+    },
+    {
+        "original": "\"Solar Energy\" AND *renewable NOT (\"Coal\" OR \"Fossil Fuel\")",
+        "expected": "+\"Solar Energy\" +*renewable -(\"Coal\" \"Fossil Fuel\")"
+    },
+    {
+        "original": "(\"Gucci\" AND *fashion) NOT \"Prada\"",
+        "expected": "(+\"Gucci\" +*fashion) -\"Prada\""
+    },
+    {
+        "original": "\"Great Wall of China\" AND *history NOT \"Eiffel Tower\"",
+        "expected": "+\"Great Wall of China\" +*history -\"Eiffel Tower\""
+    },
+    {
+        "original": "(\"Python\" AND *programming) NOT (\"Java\" OR \"C++\")",
+        "expected": "(+\"Python\" +*programming) -(\"Java\" \"C++\")"
+    }
+]
