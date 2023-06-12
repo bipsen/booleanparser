@@ -154,5 +154,17 @@
     {
         "original": "(\"Python\" AND *programming) NOT (\"Java\" OR \"C++\")",
         "expected": "(+\"Python\" +*programming) -(\"Java\" \"C++\")"
+    },
+    {
+        "original": "this OR that OR \"something else\"",
+        "expected": "this that \"something else\""
+    },
+    {
+        "original": "this AND that AND \"something else\"",
+        "expected": "+this +that +\"something else\""
+    },
+    {
+        "original": "\"NOT (this OR that)\"",
+        "expected": "\"NOT (this OR that)\""
     }
 ]
